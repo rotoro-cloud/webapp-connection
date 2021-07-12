@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-connection
+  labels:
+    name: webapp-connection
+spec:
+  containers:
+  - name: webapp-connection
+    image: rotorocloud/webapp-connection
+    ports:
+    - containerPort: 8080
